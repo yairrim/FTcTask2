@@ -69,9 +69,7 @@ public class PushbotTeleopTank_Linear extends LinearOpMode{
     public void runOpMode() {
         robot.init(hardwareMap);
 
-        
         waitForStart();
-        
         
         while (opModeIsActive()) {
             double left;
