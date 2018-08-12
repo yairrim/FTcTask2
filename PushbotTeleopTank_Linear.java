@@ -67,12 +67,15 @@ public class PushbotTeleopTank_Linear extends LinearOpMode{
      */
 
     public void runOpMode() {
+        robot.init(hardwareMap);
+
+        
+        waitForStart();
+        
+        
         while (opModeIsActive()) {
-            robot.init(hardwareMap);
-            waitForStart();
             double left;
             double right;
-
             // Run wheels in tank mode (note: The joystick goes negative when pushed forwards, so negate it)
             left = -gamepad1.left_stick_y;
             right = -gamepad1.right_stick_y;
